@@ -1,5 +1,7 @@
 const Todo = require('../models/todo');
 
+// Main logic
+
 const createTask = async (req,res) => {
     
     const {title,description,isCompleted} = req.body;

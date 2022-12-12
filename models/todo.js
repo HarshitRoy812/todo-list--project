@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Create a todo schema
 const TodoSchema = new mongoose.Schema({
     title : String,
     description : String,
@@ -9,5 +10,5 @@ const TodoSchema = new mongoose.Schema({
     }
 })
 
-
+// Compile it into a model and export it
 module.exports = mongoose.model('todo-list',TodoSchema);

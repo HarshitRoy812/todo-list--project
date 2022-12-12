@@ -10,6 +10,8 @@ const {
     deleteTask
 } = require('../logic/logic');
 
+
+// Handle all routes
 router.route('/createtask').post(createTask);
 router.route('/gettask/:id').get(readSingleTask);
 router.route('/gettasks').get(readTasks);
